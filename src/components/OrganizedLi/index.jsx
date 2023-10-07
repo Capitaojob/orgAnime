@@ -16,9 +16,14 @@ export default function OrganizedLi({ series }) {
             <div className={styles.text_container}>
                 {isEditing ? (
                     <>
-                        <input type="text" value={updatedName} onChange={(e) => setUpdatedName(e.target.value)} />
-                        <input type="number" value={updatedEpisode} onChange={(e) => setUpdatedEpisode(e.target.value)} />
-                        <input type="number" value={updatedTotalEpisodes} onChange={(e) => setUpdatedTotalEpisodes(e.target.value)} />
+                        <input className={styles.input} type="text" value={updatedName} onChange={(e) => setUpdatedName(e.target.value)} />
+                        <input className={styles.input} type="number" value={updatedEpisode} onChange={(e) => setUpdatedEpisode(e.target.value)} />
+                        <input
+                            className={styles.input}
+                            type="number"
+                            value={updatedTotalEpisodes}
+                            onChange={(e) => setUpdatedTotalEpisodes(e.target.value)}
+                        />
                         <button
                             className={styles.update__btn}
                             onClick={(e) => {
