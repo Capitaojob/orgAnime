@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    color: var(--white);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.btn__home {
+    background-color: var(--light-purple);
+}
+
+.btn__back {
+    background-color: var(--primary);
+}
+
+.container h1 {
+    font-size: 2em;
+}

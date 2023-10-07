@@ -1,0 +1,17 @@
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.logo img {
+    height: 80px;
+    user-select: none;
+}
+
+@media screen and (max-width: 700px) {
+    .logo img {
+        height: 60px;
+    }
+}
