@@ -1,23 +1,22 @@
 import { useSeriesContext } from "context/Series"
-import styles from "./Form.module.css"
 import { useState } from "react"
+import styles from "./Form.module.css"
 
 export default function Form() {
     const [name, setName] = useState("")
     const [episode, setEpisode] = useState("")
     const [totalEpisodes, setTotalEpisodes] = useState("")
-    const { series, addSeries } = useSeriesContext()
+    const { addSeries } = useSeriesContext()
 
     function handleAddSeries() {
+        if (!name || !episode || !totalEpisodes) {
+            return
+        }
         addSeries({ name: name, episode: episode, totalEpisodes: totalEpisodes })
         setName("")
         setEpisode("")
         setTotalEpisodes("")
     }
-
-    // console.log("Name:", name)
-    // console.log("episode:", episode)
-    // console.log("totalEpisodes:", totalEpisodes)
 
     return (
         <div className={styles.form__div}>

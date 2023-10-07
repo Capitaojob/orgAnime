@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 15px 30px;
     background-color: var(--light-purple);
-    max-width: 50vw;
+    max-width: 30vw;
     margin-inline: auto;
 }
 
@@ -33,9 +33,10 @@
 .form__div button {
     padding: 10px 20px;
     background-color: var(--primary);
+    cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
     .form__div {
         max-width: 100%;
     }

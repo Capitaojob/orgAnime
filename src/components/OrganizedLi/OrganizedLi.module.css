@@ -1,0 +1,71 @@
+.organized__li {
+    background-color: var(--transparent-black);
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.finished__series {
+    background-color: rgba(67, 155, 71, 0.5);
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text_container .name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.text_container input,
+.text_container .update__btn {
+    font-family: var(--font);
+    border-radius: 3px;
+    border: none;
+}
+
+.text_container input {
+    background-color: transparent;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.text_container .update__btn {
+    background-color: var(--primary);
+    box-sizing: border-box;
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.organized__li .edit {
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.organized__li .delete {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: var(--red);
+    right: 10px;
+    top: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.finished__series .delete {
+    color: var(--white);
+}
