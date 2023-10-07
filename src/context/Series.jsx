@@ -22,8 +22,8 @@ export function useSeriesContext() {
 
     function addSeries({ name, episode, totalEpisodes }) {
         const id = uuidv4()
-        const currentEpisode = episode < totalEpisodes ? episode : totalEpisodes
-        setSeries([...series, { id: id, name: name, episode: currentEpisode, totalEpisodes: totalEpisodes }])
+        // const currentEpisode = episode < totalEpisodes ? episode : totalEpisodes
+        setSeries([...series, { id: id, name: name, episode: episode, totalEpisodes: totalEpisodes }])
     }
 
     function editSeries({ id, name, episode, totalEpisodes }) {
